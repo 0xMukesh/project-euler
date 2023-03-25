@@ -1,5 +1,6 @@
 mod p001;
 mod p002;
+mod p003;
 
 use std::env;
 
@@ -11,6 +12,7 @@ fn main() {
             Ok(i) => match i {
                 1 => p001::init::run(),
                 2 => p002::init::run(),
+                3 => p003::init::run(),
                 _ => println!("Unknown problem number"),
             },
             Err(_) => {}
