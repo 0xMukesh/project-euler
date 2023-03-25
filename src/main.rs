@@ -13,12 +13,12 @@ fn main() {
     if args.len() >= 2 {
         match (&args[1]).parse::<i32>() {
             Ok(i) => match i {
-                1 => p001::init::run(),
-                2 => p002::init::run(),
-                3 => p003::init::run(),
-                4 => p004::init::run(),
-                5 => p005::init::run(),
-                6 => p006::init::run(),
+                1 => p001::run(),
+                2 => p002::run(),
+                3 => p003::run(),
+                4 => p004::run(),
+                5 => p005::run(),
+                6 => p006::run(),
                 _ => println!("Unknown problem number"),
             },
             Err(_) => {}
