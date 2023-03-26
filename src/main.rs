@@ -4,6 +4,7 @@ mod p003;
 mod p004;
 mod p005;
 mod p006;
+mod p008;
 
 use std::env;
 
@@ -19,6 +20,7 @@ fn main() {
                 4 => p004::run(),
                 5 => p005::run(),
                 6 => p006::run(),
+                8 => p008::run(),
                 _ => println!("Unknown problem number"),
             },
             Err(_) => {}
